@@ -1,0 +1,16 @@
+a = 1
+b = 2
+c = 1
+x = 3
+y = a*x**2 + b*x + c
+print(f"sol: {y}")
+
+
+a =int(input("Enter coefficient a: "))
+b =int(input("Enter coefficient b: "))
+c =int(input("Enter coefficient c: "))
+x =int(input("Enter input x: "))
+y = a*x**2 + b*x + c
+print(f"solution: {y}")
+
+
