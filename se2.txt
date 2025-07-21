@@ -1,0 +1,28 @@
+with open("data.txt", "r", encoding="utf-8-sig") as file: # Use encoding "utf-8-sig" when opening the file
+
+    line = file.readline()
+    a, b, c, x = map(float, line.split())
+
+T = a * x**2 + b * x + c
+print(f"Predicted Temperature: {T:.2f}°C")
+
+
+
+
+def Cal_temp (a,b,c,x):
+return a*x*2+b*x+c
+temp = Cal_temp (2,8,20,44,3)
+Print (f" temp at t = 3 :{Temp4"c")
+
+
+
+def Cal_temp (a,b,c,x):
+    return a*x**2+b*x+c
+input_sets = [
+             (0.1,-0.8,20,3),
+             (0.2,-1.2,25,5),
+             (0.5,-2,30,6)
+            ]
+for i, (a, b, c, x) in enumerate(input_sets):
+    temp = Cal_temp (a, b, c, x)
+    print (f"set {i + 1}: temp at t = {x} is {temp}°C")
